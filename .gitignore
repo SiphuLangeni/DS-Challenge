@@ -1,0 +1,10 @@
+# MacOS generated
+.DS_Store
+._*
+
+# Byte-compiled
+__pycache__
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
