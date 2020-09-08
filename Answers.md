@@ -27,7 +27,7 @@ For this dataset, it made sense to remove outliers. If the dataset had customers
 **FROM** Orders  
 **INNER JOIN** Shippers **ON** Orders.ShipperID=Shippers.ShipperID  
 **WHERE** ShipperName = 'Speedy Express'  
-**GROUP BY** ShipperName
+**GROUP BY** ShipperName;
 
 ***Answer:***  
 
@@ -41,7 +41,7 @@ For this dataset, it made sense to remove outliers. If the dataset had customers
 **FROM** Orders  
 **INNER JOIN** Employees **ON** Orders.EmployeeID=Employees.EmployeeID  
 **GROUP BY** LastName  
-**ORDER BY** NumOrders **DESC LIMIT** 1  
+**ORDER BY** NumOrders **DESC LIMIT** 1;  
 
 ***Answer:***  
 
@@ -59,7 +59,7 @@ TotalOrdered
 **INNER JOIN** Products **ON** OrderDetails.ProductID=Products.ProductID  
 **WHERE** Country = 'Germany'  
 **GROUP BY** ProductName  
-**ORDER BY** TotalOrdered **DESC LIMIT** 1  
+**ORDER BY** TotalOrdered **DESC LIMIT** 1;  
 
 ***Answer:***  
 
