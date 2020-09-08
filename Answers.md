@@ -6,13 +6,13 @@ Average order value (AOV) is a metric used to track average dollars spent on eac
   
 **b. What metric would you report for this dataset?**  
 
-A better metric to use would be the median order value (MOV) as median is much more robust to outliers than the mean. It is more reflective of central tendancies in data which is highly skewed. Alternatively, depending on the dataset and the distribution of the data, one could also calculate the AOV after removing outliers OR replacing outliers with the median value.  Only 5.46\% of the data are outliers so I am comfortable removing them for the purpose of this analysis. 
+A better metric to use would be the median order value (MOV) as median is much more robust to outliers than the mean. It is more reflective of central tendancies in data which is highly skewed. Alternatively, depending on the dataset and the distribution of the data, one could also calculate the AOV after removing outliers OR replacing outliers with the median value.  Only 141 orders (2.82\% of the data) are outliers so I am comfortable removing them for the purpose of this analysis. 
 
 **c. What is its value?**  
 
 **MOV** is $284.00  
-**AOV** (*after outliers removed*) is $283.02  
-**AOV** (*after replacing outliers with median value*) is $283.08  
+**AOV** (*after outliers removed*) is $293.72  
+**AOV** (*after replacing outliers with median value*) is $293.44  
 
 ***Additional notes:***  
 For this dataset, it made sense to remove outliers. If the dataset had customers with very different spending patterns, it may be meaningful to identify those clusters first, then calculate the AOV for each of them individually.

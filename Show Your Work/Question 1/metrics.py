@@ -93,8 +93,8 @@ class Metrics:
         Q2 = self.df[self.column].quantile(0.5)
         Q3 = self.df[self.column].quantile(0.75)
         IQR = Q3 - Q1
-        lower_limit = Q1 - IQR
-        upper_limit = Q3 + IQR
+        lower_limit = Q1 - (1.5 * IQR)
+        upper_limit = Q3 + (1.5 * IQR)
         outliers = self.df[(self.df[self.column] < lower_limit)\
              | (self.df[self.column] > upper_limit)]
 
